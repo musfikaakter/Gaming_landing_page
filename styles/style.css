@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --hero-heading-fs: 5rem;
+  --primary-title-fs: 3rem;
+  --secondary-title: 1.5rem;
+  --primary-text-fs: 1.125rem;
+  --primary-demo-fs: 1.25rem;
+
+  --golden:#FFC536;
+  --dark:#050818;
+  --dark-lt:#181c2d;
+  --black:#000;
+  --white: #fff;
+  --gradient: linear-gradient(to bottom,#252734,#080b1d);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+section {
+  padding: 1rem 0;
+}
+button{
+  cursor: pointer;
+}
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn {
+  outline: none;
+  border: none;
+  font-family: inherit;
+  font-size: var(--primary-text-fs);
+  font-weight: 500;
+  border-radius: 6px;
+  padding: 0.9rem 1.6rem;
+  color: var(--white);
+}
+.primary-title {
+  font-size: var(--primary-title-fs);
+  font-weight: 800;
+  color: var(--white);
+}
+.primary-text {
+  font-size: var(--primary-text-fs);
+  font-weight: 400;
+  color: var(--white);
+  line-height: 30px;
+  margin: 1.5rem 0;
+}
+.primary-demo {
+  font-size: var(--primary-demo-fs);
+  font-weight: 600;
+  color: var(--grey);
+}
+
+/* header */
+header{
+  background-image: url(../images/hero-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 5rem;
+}
+.header_menu{
+  background-color: var(--dark);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.header_menu_items {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_menu_lists{
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.header_menu_lists a{
+  color: var(--white);
+}
+.header_menu_lists a:hover{
+  color: var(--golden);
+}
+
+.hamberger{
+  display: none;
+  
+  & .ham_menu {
+      border-radius: 10px;
+      border: none;
+      height: 5px;
+      width: 1.5rem;
+      background-color: var(--golden);
+      margin: 3px 0;
+  }
+}
+
+.header__btn{
+  border: 2px solid var(--golden);
+  border-radius: 5px;
+  background-color: transparent;
+  padding: .7rem 1.5rem;
+  color: var(--golden);
+}
+.header__btn:hover,
+.release_btn_bottom:hover{
+  box-shadow: 0 0 8px var(--golden);
+}
+.hero_content{
+  margin-top: 5rem;
+}
+
+.hero_heading{
+  font-size: var(--hero-heading-fs);
+  color: var(--white);
+  font-weight: 700;
+  width: 70%;
+}
+.hero_details{
+  width: 53%;
+}
+.hero_btn_group{
+  margin-top: 3rem;
+}
+
+.hero_btn_one{
+  background-color: var(--golden);
+  color: var(--dark);
+  margin-right: 2rem;
+}
+
+.hero_btn_one:hover{
+  box-shadow: 0 0 8px var(--golden);
+}
+
+.hero_btn_two{
+  background-color: transparent;
+  color: var(--white);
+  outline: 2px solid var(--white);
+}
+
+.hero_btn_two:hover{
+  box-shadow: 0 0 10px var(--white);
+}
+/* header ends */
+/* release starts */
+.release{
+  padding-top: 7rem;
+  padding-bottom: 6rem;
+  background-color: var(--dark);
+}
+
+.relaese_details,
+.studio_details,
+.footer_details{
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.release_items{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.release_item{
+  width: 26rem;
+  height: 34rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+.release_item_one{
+  background-image: url(../images/games-img-one.png);
+}
+.release_item_two{
+  background-image: url(../images/games-img-two.png);
+}
+
+.release_item_content{
+  width: 75%;
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+}
+
+.release_title{
+  font-size: var(--secondary-title);
+  color: var(--white);
+}
+
+.release_btn{
+  background-color: var(--golden);
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  padding: .5rem 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+.release_btn:hover{
+box-shadow: 0 0 8px var(--golden);
+}
+
+.release_item img{
+  width: 19px;
+  height: 18px;
+}
+
+.rating_wrapper{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.release_btn_bottom{
+  border: 2px solid var(--golden);
+  border-radius: 5px;
+  background-color: transparent;
+  padding: .7rem 1.5rem;
+  color: var(--golden);
+}
+.release_btn_item{
+  width: 11rem;
+  margin: 3rem auto;
+}
+
+/* release ends */
+/* studio start */
+.studio{
+  padding-top: 7rem;
+  padding-bottom: 6rem;
+  background-color: var(--dark-lt);
+}
+
+.studio_item{
+  width: 37rem;
+  padding: .8rem 1.4rem;
+  border-radius: 8px;
+  background: var(--gradient);
+  display: flex;
+  gap: 1rem;
+}
+.studio_image{
+  width: 56px;
+  height: 56px;
+}
+
+.studio_title_sec{
+  font-size: var(--secondary-title);
+  color: var(--white);
+  font-weight: 500;
+}
+
+.studio_items_top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.studio_item_three{
+ margin: 1rem auto;
+}
+/* studio ends */
+/* Tournament starts */
+.tournament{
+  background-image: url(../images/tournament.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 5rem;
+}
+
+.tournament_details{
+  width: 50%;
+  margin-top: 5rem;
+}
+
+.tournament_text{
+  margin: 2rem 0;
+}
+
+/* Tournament ends */
+/* footer starts */
+footer{
+  padding-top: 7rem;
+  padding-bottom: 6rem;
+  background-color: var(--dark);
+}
+
+.footer_sponser_logos{
+  margin-top: 3rem;
+ display: flex;
+ align-items: center;
+  justify-content: space-between;
+}
+
+.footer_sponser_logos img{
+  width: 10.625rem;
+  height: 3.125rem;
+}
+.footer_sponser_logos img:hover{
+  scale: 1.06;
+}
+
+.footer_copyright{
+  margin-top: 8rem;
+  background-color: var(--golden);
+  border-radius: 8px;
+  height: 5rem;
+  width: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.footer_text{
+  color: var(--dark);
+}
+/* footer ends */

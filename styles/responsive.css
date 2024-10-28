@@ -1,0 +1,272 @@
+/* for modile device */
+@media (min-width: 320px) and (max-width: 480px) {
+  :root {
+    --hero-heading-fs: 1.2rem;
+    --primary-title-fs: 1rem;
+    --secondary-title: 0.9rem;
+    --primary-text-fs: 0.6rem;
+  }
+
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .primary-text {
+    line-height: 10px;
+    margin: 0.5rem 0;
+  }
+  .btn {
+    padding: 0.4rem 0.6rem;
+  }
+  .hero_details {
+    width: 62%;
+  }
+  header {
+    padding-bottom: 2rem;
+    padding-left: .8rem;
+    padding-right: .8rem;
+    background-size: cover;
+    background-position: center;
+  }
+  .header_menu_items {
+    height: 3rem;
+    justify-content: space-between;
+  }
+  .hamberger {
+    display: block;
+    cursor: pointer;
+  }
+  .header_menu_items .header_menu_lists,
+  .header__btn {
+    display: none;
+  }
+  .header_logo {
+    width: 120px;
+  }
+  .hero_content {
+    margin-top: 1rem;
+  }
+  .hero_btn_group {
+    margin-top: 1rem;
+  }
+  .hero_btn_one {
+    margin-right: 1rem;
+  }
+
+  .release,
+  .studio {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  .release_items {
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+  .release_item {
+    width: 15rem;
+    height: 21rem;
+  }
+  .release_item_content {
+    bottom: 3rem;
+  }
+  .release_btn_bottom {
+    padding: 0.5rem 0.6rem;
+    font-size: 9px;
+  }
+  .release_btn_item {
+    margin: 1rem auto;
+  }
+  .studio_image {
+    width: 31px;
+    height: 32px;
+  }
+  .studio_items_top {
+    display: block;
+    margin-top: 2rem;
+  }
+  .studio_item {
+    width: 95%;
+    padding: 0.3rem 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+  }
+  .studio_item_details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .release_btn_item {
+    width: 6rem;
+  }
+
+  .tournament {
+    padding: 2rem .8rem;
+    background-position: center;
+    background-size: cover;
+  }
+  .tournament_details {
+    width: 50%;
+    margin-top: 0;
+  }
+
+  .tournament_title {
+    margin-bottom: 1rem;
+  }
+
+  footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .footer_sponser_logos {
+    margin-top: 2rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .footer_sponser_logos img {
+    width: 10rem;
+    height: 3rem;
+  }
+  .footer_copyright {
+    margin-top: 2rem;
+    height: 2rem;
+  }
+}
+
+/* for tablet */
+@media (min-width: 480px) and (max-width: 768px) {
+  :root {
+    --hero-heading-fs: 1.5rem;
+    --primary-title-fs: 1.2rem;
+    --secondary-title: 1rem;
+    --primary-text-fs: 0.8rem;
+  }
+
+  .container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+  .primary-text {
+    line-height: 1rem;
+    margin: 0.7rem 0;
+  }
+  .btn {
+    padding: 0.6rem 0.9rem;
+  }
+  .hero_details {
+    width: 62%;
+  }
+  .hero_content {
+    margin-top: 2rem;
+    width: 80%;
+  }
+  header {
+    padding-bottom: 4rem;
+    padding-left: 1rem;
+    background-size: cover;
+    background-position: center;
+  }
+  .header_menu_items {
+    height: 3rem;
+    justify-content: space-between;
+  }
+  .hamberger {
+    display: block;
+    cursor: pointer;
+  }
+  .header_menu_items .header_menu_lists,
+  .header__btn {
+    display: none;
+  }
+  .header_logo {
+    width: 140px;
+  }
+  .hero_content {
+    margin-top: 1.6rem;
+  }
+  .hero_btn_group {
+    margin-top: 1.3rem;
+  }
+  .hero_btn_one {
+    margin-right: 1.1rem;
+  }
+
+  .release,
+  .studio {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+  .release_items {
+    flex-direction: column;
+    margin-top: 4rem;
+  }
+  .release_item {
+    width: 24rem;
+    height: 36rem;
+  }
+  .release_item_content {
+    bottom: 4rem;
+  }
+  .release_btn_bottom {
+    padding: 0.7rem 0.9rem;
+    font-size: 10px;
+  }
+  .release_btn_item {
+    margin: 1.4rem auto;
+  }
+  .studio_image {
+    width: 46px;
+    height: 46px;
+  }
+  .studio_items_top {
+    display: block;
+    margin-top: 3rem;
+  }
+  .studio_item {
+    width: 95%;
+    padding: 0.5rem 0.8rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.3rem auto;
+  }
+  .studio_item_details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .release_btn_item {
+    width: 7rem;
+  }
+  .tournament {
+    background-position: center;
+    background-size: cover;
+    padding: 4rem 2rem;
+  }
+  .tournament_details {
+    width: 50%;
+    margin-top: 0;
+  }
+
+  footer {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  .footer_sponser_logos {
+    margin-top: 3rem;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+  .footer_sponser_logos img {
+    width: 13rem;
+    height: 4rem;
+  }
+  .footer_copyright {
+    margin-top: 3rem;
+    height: 3rem;
+  }
+}
